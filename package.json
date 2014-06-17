@@ -1,0 +1,29 @@
+{
+  "name": "react-flow",
+  "version": "0.1.0",
+  "description": "experiments at a flux/react framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theporchrat/react-flux"
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "dispatcher",
+    "store"
+  ],
+  "author": "Jason Quense @theporchrat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theporchrat/react-flux/issues"
+  },
+  "homepage": "https://github.com/theporchrat/react-flux",
+  "dependencies": {
+    "bluebird": "^2.1.2",
+    "lodash": "^2.4.1"
+  }
+}
