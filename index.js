@@ -1,7 +1,13 @@
-
+var BaseStore = require('./lib/BaseStore')
+  , defineStore = require('./lib/util/define-store')
+  
 module.exports = {
-	BaseStore: require('./lib/BaseStore'),
-	Store: require('./lib/Store'),
+
+	defineStore: defineStore,
+
 	createActions: require('./lib/Actions'),
-	StoreWatchMixin: require('./lib/StoreWatchMixin')
+
+	StoreWatchMixin: require('./lib/StoreWatchMixin'),
+
+	DataHelperStoreMixin: require('./lib/DataHelperStoreMixin')
 }
