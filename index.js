@@ -5,9 +5,13 @@ module.exports = {
 
 	defineStore: defineStore,
 
-	createActions: require('./lib/Actions'),
+	actions: require('./lib/Actions'),
 
 	StoreWatchMixin: require('./lib/StoreWatchMixin'),
 
-	DataHelperStoreMixin: require('./lib/DataHelperStoreMixin')
+	DataHelperStoreMixin: require('./lib/DataHelperStoreMixin'),
+
+	Model: require('./lib/dal/Model'),
+
+	Collection: require('./lib/dal/Collection')
 }
