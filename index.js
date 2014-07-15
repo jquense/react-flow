@@ -4,6 +4,7 @@ var BaseStore = require('./lib/stores/BaseStore')
 
 module.exports.create = require('./lib/Application').create
 
+module.exports.ViewClass = require('./lib/routing/View')
 module.exports.Stores = {
 
 	StoreFactory: defineStore,
