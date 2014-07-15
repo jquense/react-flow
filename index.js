@@ -6,8 +6,10 @@ module.exports.create = require('./lib/Application').create
 
 module.exports.Stores = {
 
-	defineStore: defineStore,
+	StoreFactory: defineStore,
 
+	listenFor: defineStore.listenFor,
+	
 	StoreWatchMixin: require('./lib/stores/StoreWatchMixin'),
 
 	DataHelperStoreMixin: require('./lib/stores/DataHelperStoreMixin')
@@ -24,6 +26,8 @@ module.exports.DataAccess = {
 module.exports.Actions = require('./lib/actions/actions')
 
 module.exports.DataAccess = {
+
+	field: require('./lib/dal/Field').create,
 
 	Model: require('./lib/dal/Model'),
 
